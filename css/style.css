@@ -24,13 +24,25 @@
 }
 
 
+/* Colors Palette */
+:root {
+    --nav-bg: #080b12;
+    --main-card-bg: #141922;
+    --aside-bg: #000000;
+    --subtitles-color: #72757a;
+    --hr: #adff2f;
+
+}
+
+
+
 
 /* Generics */
 
 .top {
     height: calc(100% - 70px);
     background-color: red;
-    overflow y: auto;
+    overflow: hidden;
 
 
     .sidebar {
@@ -40,12 +52,17 @@
 
     .main-card {
         width: 100%;
+        overflow-y: auto;
 
 
         .navbar {
             height: 60px;
             background-color: black;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
+
 
 
     }
