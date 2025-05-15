@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px dashed green; */
+
+
 }
 
 /* Utils */
@@ -24,6 +27,12 @@
 }
 
 
+.c-gray {
+    color: var(--subtitles-color);
+}
+
+
+
 /* Colors Palette */
 :root {
     --nav-bg: #080b12;
@@ -36,19 +45,85 @@
 
 
 
-
 /* Generics */
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+li {
+    list-style: none;
+    color: white;
+
+
+}
+
+
+
+
+/* TOP */
+
 
 .top {
     height: calc(100% - 70px);
     background-color: red;
     overflow: hidden;
 
+    /* Aside */
 
     .sidebar {
         width: 230px;
-        background-color: blue;
+        background-color: var(--aside-bg);
+        padding: 0.5rem;
+
+
+
+        #logo {
+            width: 150px;
+            padding: 1rem;
+        }
+
+
+        .icons {
+            width: 1.5rem;
+        }
+
+        ul {
+            padding: 1rem 1rem;
+        }
+
+
+        li {
+
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.2rem 0;
+        }
+
+        span {
+            line-height: 10px;
+            font-size: 1rem;
+        }
+
+
     }
+
+
+    /* Main card */
 
     .main-card {
         width: 100%;
@@ -56,11 +131,26 @@
 
 
         .navbar {
-            height: 60px;
-            background-color: black;
+            padding: 1rem;
+            height: 70px;
+            background-color: var(--nav-bg);
             position: sticky;
             top: 0;
             z-index: 10;
+            justify-content: flex-end;
+
+
+            #upgrade {
+                padding: 0.7rem 2.5rem;
+                border: 2px solid white;
+                text-transform: uppercase;
+                border-radius: 1rem;
+                line-height: 0.8rem;
+                font-size: 0.7rem;
+
+            }
+
+
         }
 
 
