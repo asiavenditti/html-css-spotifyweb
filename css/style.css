@@ -240,12 +240,31 @@ i {
 
 /* Responsive Mobile XS 552PX */
 
+
 @media screen and (max-width: 552px) {
     .top .sidebar {
-        width: 50px;
-
-
-
-
+        width: 80px;
+        align-items: center;
     }
+
+
+    .top .sidebar span,
+    .top .sidebar h5,
+    .top .sidebar .playlist,
+    .top .sidebar .playlist+ul,
+    .top .sidebar .download span,
+    .top .sidebar .user-profile span {
+        display: none;
+    }
+
+
+}
+
+#logo {
+    width: 50px;
+}
+
+.top .sidebar img,
+.top .sidebar i {
+    display: inline-block;
 }
