@@ -2,5 +2,73 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+/* Utils */
+
+.wrapper {
+    height: 100vh;
+
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+
+/* Generics */
+
+.top {
+    height: calc(100% - 70px);
+    background-color: red;
+    overflow y: auto;
+
+
+    .sidebar {
+        width: 230px;
+        background-color: blue;
+    }
+
+    .main-card {
+        width: 100%;
+
+
+        .navbar {
+            height: 60px;
+            background-color: black;
+        }
+
+
+    }
+
+
+}
+
+
+.bottom {
+    background: black;
+    height: 60px;
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+/* Responsive Mobile XS 552PX */
+
+@media screen and (max-width: 552px) {
+    .top .sidebar {
+        width: 50px;
+    }
 }
