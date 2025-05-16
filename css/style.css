@@ -37,12 +37,11 @@
 }
 
 
-
 /* Utilities Col & Row */
 
 [class^="col"] {
-    padding: 0.5rem;
-    /* border: 1px dashed yellow; */
+    padding: 1rem;
+    border: 1px dashed yellow;
 }
 
 
@@ -329,6 +328,14 @@ i {
 
         }
 
+        section {
+            padding: 1.5rem;
+
+            h3 {
+                padding-bottom: 1rem;
+            }
+        }
+
 
     }
 
@@ -383,6 +390,10 @@ i {
 
 
     /* Col-sm */
+
+    .row {
+        flex-wrap: wrap;
+    }
 
     .col-sm-1 {
         width: calc(100% / 12 * 1);
@@ -443,6 +454,7 @@ i {
 
 
     /* Col-md */
+
 
     .col-md-1 {
         width: calc(100% / 12 * 1);
