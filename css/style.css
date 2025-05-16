@@ -376,54 +376,30 @@ figcaption {
 
 /* RESPONSIVE */
 
+/* Responsive Tablet 768px */
 
-/* Responsive Mobile XS 568PX */
+@media screen and (max-width:768px) {
 
 
-@media screen and (max-width: 568px) {
-    .top .sidebar {
-        width: 80px;
-        align-items: center;
+
+
+    /* Col-md */
+
+    .row {
+        flex-wrap: wrap;
     }
 
 
-    .top .sidebar span,
-    .top .sidebar h5,
-    .top .sidebar .playlist,
-    .top .sidebar .playlist+ul,
-    .top .sidebar .download span,
-    .top .sidebar .user-profile span,
-    .side-top #logo {
-        display: none;
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
     }
 
-
-
-    #logo-sm {
-        width: 50px;
+    main .menu {
+        width: 90%;
+        margin: 0 auto;
     }
 
-
-
-
-    .top .sidebar img,
-    .top .sidebar i,
-    .top .sidebar .side-top #logo-sm {
-        display: inline-block;
-    }
-
-    .col-sm-6 {
-        width: 50%;
-    }
-
-
-
-    main .section {
-
-        width: 100%;
-    }
 }
-
 
 /* Responsive Mobile S 639PX */
 
@@ -488,30 +464,49 @@ figcaption {
 
 }
 
+/* Responsive Mobile XS 568PX */
 
 
-
-/* Responsive Tablet 768px */
-
-@media screen and (max-width:768px) {
-
-
-
-
-    /* Col-md */
-
-    .row {
-        flex-wrap: wrap;
+@media screen and (max-width: 568px) {
+    .top .sidebar {
+        width: 80px;
+        align-items: center;
     }
 
 
-    .col-md-3 {
-        width: calc(100% / 12 * 3);
+    .top .sidebar span,
+    .top .sidebar h5,
+    .top .sidebar .playlist,
+    .top .sidebar .playlist+ul,
+    .top .sidebar .download span,
+    .top .sidebar .user-profile span,
+    .side-top #logo {
+        display: none;
     }
 
-    main .menu {
-        width: 90%;
-        margin: 0 auto;
+
+
+    #logo-sm {
+        width: 50px;
     }
 
+
+
+
+    .top .sidebar img,
+    .top .sidebar i,
+    .top .sidebar .side-top #logo-sm {
+        display: inline-block;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+
+
+    main .section {
+
+        width: 100%;
+    }
 }
