@@ -343,15 +343,18 @@ figcaption {
                 a {
                     color: var(--subtitles-color);
                     text-transform: uppercase;
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     font-weight: bold;
 
                 }
+
 
                 a:hover {
                     color: white;
                 }
             }
+
+
 
         }
 
@@ -478,6 +481,9 @@ li:hover,
 
         }
 
+        .info-song span:hover {
+            text-decoration: underline;
+        }
 
 
         .player-center {
@@ -575,8 +581,8 @@ li:hover,
 
 
             .dot {
-                height: 7px;
-                width: 7px;
+                height: 8px;
+                width: 8px;
                 border-radius: 50%;
                 background-color: white;
                 position: absolute;
@@ -591,19 +597,16 @@ li:hover,
 
 
 
-
         }
 
         .volume-level:hover .dot {
             opacity: 1;
         }
-
     }
 
 
 
 }
-
 
 
 
