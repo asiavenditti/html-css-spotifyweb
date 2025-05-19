@@ -311,7 +311,7 @@ figcaption {
             }
 
             #upgrade:hover {
-                padding: 0.5rem 2.8rem;
+                scale: (1.2);
                 font-weight: 800;
                 color: rgb(26, 224, 26);
                 border: 2px solid rgb(19, 167, 19);
@@ -479,6 +479,8 @@ li:hover,
                 height: 4px;
                 background-color: #555;
                 border-radius: 2px;
+                position: relative;
+                top: 0;
 
 
             }
@@ -487,12 +489,14 @@ li:hover,
                 width: 25%;
                 height: 100%;
                 background-color: white;
-                position: relative;
             }
 
             .progress-level:hover {
                 background-color: yellow;
-                transition: 3s;
+
+
+
+
 
             }
 
@@ -502,9 +506,16 @@ li:hover,
                 border-radius: 50%;
                 background-color: white;
                 position: absolute;
-                top: 50%;
-                left: 25%;
+                top: -2px;
+                left: 24%;
+                opacity: 0;
 
+
+
+            }
+
+            .progress-level:hover .dot {
+                opacity: 1;
 
             }
 
@@ -530,9 +541,31 @@ li:hover,
             width: 40%;
             height: 100%;
             background-color: white;
+            position: relative;
+
+
+            .dot {
+                height: 7px;
+                width: 7px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                top: -2px;
+                left: 82%;
+                opacity: 0;
+
+
+
+            }
+
+
+
 
         }
 
+        .volume-level:hover .dot {
+            opacity: 1;
+        }
 
     }
 
