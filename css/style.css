@@ -339,7 +339,7 @@ main {
         justify-content: flex-end;
 
         #upgrade {
-            padding: 0.5rem 2.5rem;
+            padding: 0.5rem 2.8rem;
             border: 2px solid white;
             text-transform: uppercase;
             border-radius: 1.5rem;
@@ -349,7 +349,7 @@ main {
         }
 
         #upgrade:hover {
-            scale: (1.2);
+            transform: scale(1.1);
             font-weight: 800;
             color: rgb(26, 224, 26);
             border: 2px solid rgb(19, 167, 19);
